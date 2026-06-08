@@ -1,30 +1,28 @@
-*{
+
+
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
 
-body{
+body {
     background: linear-gradient(135deg, #153677, #4e085f);
     min-height: 100vh;
-    overflow: hidden;
     color: white;
-    
 }
 
-.container{
-    /* margin: 12%; */
+.container {
     margin: 200px auto 20px;
-    width: 90% ;
+    width: 90%;
     max-width: 700px;
     background-color: white;
     padding: 30px;
     border-radius: 10px;
-    
 }
 
-.display{
+.display {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 30px;
@@ -34,48 +32,121 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 25px 20px;
-    border-radius: 5px ;
-    border:2px solid black ;
+    border-radius: 5px;
+    border: 2px solid black;
 }
 
-.container h1{
+.container h1 {
     font-weight: 500;
     font-size: 45px;
 }
 
-.container h1 span{
+.container h1 span {
     color: #019f55;
-    border-bottom: 4px solid #019f55 ;
+    border-bottom: 4px solid #019f55;
 }
+
 .display img {
     width: 30px;
     cursor: pointer;
-
 }
 
-.display input{
+.display input {
     border: 0;
     outline: 0;
     font-size: 24px;
-
 }
 
-.container button img{
+.container button img {
     width: 28px;
     margin-right: 10px;
 }
 
-.container button{
+.container button {
     border: 0;
     outline: 0;
     background-color: #019f55;
     color: white;
     font-size: 22px;
-    font-weight: 300px;
+    font-weight: 300;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px 16px;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
+}
+
+/* ── Tablet (max 768px) ── */
+@media (max-width: 768px) {
+    .container {
+        margin: 120px auto 20px;
+        padding: 24px 20px;
+    }
+
+    .container h1 {
+        font-size: 36px;
+    }
+
+    .display {
+        margin-top: 36px;
+        margin-bottom: 24px;
+        padding: 20px 16px;
+    }
+
+    .display input {
+        font-size: 20px;
+    }
+
+    .container button {
+        font-size: 18px;
+        padding: 14px;
+    }
+}
+
+/* ── Mobile (max 480px) ── */
+@media (max-width: 480px) {
+    body {
+        overflow-y: auto; 
+    }
+
+    .container {
+        margin: 60px auto 20px;
+        width: 94%;
+        padding: 20px 16px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .display {
+        margin-top: 24px;
+        margin-bottom: 20px;
+        padding: 16px 12px;
+        border-radius: 4px;
+    }
+
+    .display input {
+        font-size: 16px; 
+        width: 100%;
+    }
+
+    .display img {
+        width: 24px;
+        flex-shrink: 0;
+    }
+
+    .container button {
+        font-size: 16px;
+        padding: 14px 12px;
+        border-radius: 4px;
+    }
+
+    .container button img {
+        width: 22px;
+        margin-right: 8px;
+    }
 }
